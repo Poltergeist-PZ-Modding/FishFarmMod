@@ -1,0 +1,79 @@
+module FFM
+{
+
+	model S_MediumLobster_Ground
+	{
+		mesh = Worlditems/Lobster,
+		texture = Worlditems/LobsterTexture,
+		scale = 0.0045,
+	}
+	model S_RoastedMediumLobster_Ground
+	{
+		mesh = Worlditems/RoastedLobster,
+		texture = Worlditems/RoastedLobsterTexture,
+		scale = 0.0045,
+	}
+	model S_Bluecrab_Ground
+	{
+		mesh = Worlditems/Crab,
+		texture = Worlditems/BlueCrabTexture,
+		scale = 0.0045,
+	}
+	model S_Portunus_Ground
+	{
+		mesh = Worlditems/Crab,
+		texture = Worlditems/PortunusCrabTexture,
+		scale = 0.0040,
+	}
+	model S_Shell_Ground
+	{
+		mesh = Worlditems/Clam,
+		texture = Worlditems/ShellfishTexture,
+		scale = 0.0045,
+	}
+	model S_Shrimp_Ground
+	{
+		mesh = Worlditems/Shrimp,
+		texture = Worlditems/ShrimpTexture,
+		scale = 0.0045,
+	}
+	model S_BowlLobster_Ground
+	{
+		mesh = Worlditems/Bowl_Lobster,
+		texture = Worlditems/BowlLobsterSoup,
+		scale = 0.0045,
+	}
+	model S_PotLobster_Ground
+	{
+		mesh = Worlditems/Cookingpot_Lobster,
+		texture = Worlditems/CookingPotLobster,
+		scale = 0.0045,
+	}
+	model S_RoastPanLobster_Ground
+	{
+		mesh = Worlditems/RoastingPan_Lobster,
+		texture = Worlditems/RoastingPanLobster,
+		scale = 0.0045,
+	}
+	/***********HAND MODELS***********/
+	model H_Lobster
+	{
+		mesh = Worlditems/H_Lobster,
+		texture = Worlditems/RoastedLobsterTexture,
+		scale = 0.0045,
+	}
+	model H_Bowl_Lobster
+
+	{
+		mesh = Worlditems/H_Bowl_Lobster,
+		texture = Worlditems/BowlLobsterSoup,
+		scale = 0.0045,
+	}
+	model Hand_Shrimp
+	{
+		mesh = Worlditems/H_Shrimp,
+		texture = Worlditems/ShrimpTexture,
+		scale = 0.0045,
+	}
+	model FishFarmCraftMagazine { mesh = WorldItems/Magazine, texture = WorldItems/FishFarmCraftMagazine, scale =  0.4, }
+}

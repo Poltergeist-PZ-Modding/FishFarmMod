@@ -1,0 +1,49 @@
+module FishFarmMod
+{
+  	imports { Base }
+
+	recipe Prepare Roasting Pan with Lobster
+   	{
+        keep [Recipe.GetItemTypes.SharpKnife]/MeatCleaver,
+        Lobster;20,
+        Butter;2,
+        destroy BakingPan,
+        Result:RoastingPan_Lobster,
+        Time:250.0,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.Cooking3,
+   	}
+	recipe Prepare Pot of Lobster Bisque
+   	{
+        keep [Recipe.GetItemTypes.SharpKnife]/MeatCleaver,
+        Lobster;20,
+        Wine;2,
+        [Recipe.GetItemTypes.Milk];2,
+        destroy Pot,
+        Result:Pot_LobsterBisque_Uncooked,
+        Time:250.0,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.Cooking3,
+   	}
+	recipe Make 2 Bowls of Lobster Bisque
+	{
+        Pot_LobsterBisque;50,
+        Bowl=2,
+        Result: Bowl_LobsterBisque=2,
+        Time: 80.0,
+        Category: Cooking,
+        OnGiveXP: Recipe.OnGiveXP.None,
+	}
+	/***
+    recipe FishFarmMod MakeFarmNet {
+        keep [Recipe.GetItemTypes.Hammer],
+        WoodenStick = 8,
+        Nails = 4,
+        FishingNet = 1,
+        Time:320,
+        SkillRequired:Woodwork=4,
+        Result: Moveables.FishFarmMod_16,
+        Category:Fishing,
+    }
+    ***/
+}

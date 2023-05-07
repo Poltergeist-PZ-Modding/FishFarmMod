@@ -1,0 +1,18 @@
+module FFM {
+
+    imports { Base }
+
+    /**************************** Literature **********************************/
+    item FishFarmCraftMagazine {
+        DisplayCategory = SkillBook,
+        Weight = 0.1,
+        Type = Literature,
+        DisplayName	= Craft Magazine,
+        Icon = FishFarmCraftMagazine,
+        TeachedRecipes = FishFarmMod MakeFarmNet,
+        ReplaceOnUse = FishFarmCraftMagazine,
+        StaticModel = Magazine,
+        WorldStaticModel = FishFarmCraftMagazine,
+    }
+
+}

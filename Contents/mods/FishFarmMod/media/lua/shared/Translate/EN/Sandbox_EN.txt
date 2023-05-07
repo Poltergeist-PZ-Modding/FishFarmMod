@@ -1,0 +1,5 @@
+Sandbox_EN = {
+	Sandbox_OrbitFishingMod = "Fishing Mod",
+	Sandbox_OrbitFishingMod_FarmCraftingMagazine = "Farm: Crafting Magazine",
+	Sandbox_OrbitFishingMod_FarmCraftingMagazine_tooltip = "Crafting the tiles requires to find the magazine. <LINE> When enabled, magazines will spawn, and you will need to have read the magazine to craft the tiles.",
+}

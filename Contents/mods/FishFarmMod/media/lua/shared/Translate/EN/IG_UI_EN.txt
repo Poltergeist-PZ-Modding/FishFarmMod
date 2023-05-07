@@ -1,0 +1,14 @@
+IGUI_EN = {
+    IGUI_FishFarmMod_FishFarm = "Fish Farm",
+    IGUI_FishFarmMod_BuildFishFarm = "Build Fish Farm",
+    IGUI_FishFarmMod_BuildFishFarmSingle = "Build Small Fish Farm",
+    IGUI_FishFarmMod_BuildFishDescription = "Turns unwanted and rotten food into fish food over time. ",
+    IGUI_FishFarmMod_RequiresHammer = "You have no hammer.",
+    IGUI_FishFarmMod_RequiresMagazine = "You don't know how to build this.",
+    IGUI_FishFarmMod_FarmBroken = "Farm is broken",
+    IGUI_FishFarmMod_FishFarmOption = "Start Fish Farm",
+    IGUI_FishFarmMod_CrabFarmOption = "Start Crab Farm",
+    IGUI_FishFarmMod_ShrimpFarmOption = "Start Shrimp Farm",
+    IGUI_FishFarmMod_CleanFarmOption = "Clean Farm (reset)",
+    IGUI_FishFarmMod_CollectFarmOption = "Collect from farm, available:%1",
+}

@@ -1,0 +1,10 @@
+id=FishFarmMod
+name=Fish Farm
+description=This Mod is Commissioned to Team Orbit. You are not allowed to put this on your modpack
+poster=poster.png
+versionMin=41.0
+tiledef=FishFarmMod 2697
+pack=FishFarmMod
+
+icon=icon.png
+authors=TeamOrbit
