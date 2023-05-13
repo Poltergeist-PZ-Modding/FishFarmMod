@@ -122,6 +122,12 @@ function Context.OnFillWorldObjectContextMenu(playerNum, context, worldobjects, 
             else
                 info.farmData.filled = info.farmData.filled + dc / info.farmData.fillSpeed
             end
+
+            if info.singleTile then
+                Context.farmObject:transmitModData()
+            else
+                Context.farmObjects:get(0):transmitModData()
+            end
         end
 
         if not info.farmData then
@@ -157,7 +163,7 @@ function Context.OnFillWorldObjectContextMenu(playerNum, context, worldobjects, 
 
             local collectNum = math.floor(info.farmData.filled)
             local collectOption = subMenu:addOption(getText("IGUI_FishFarmMod_CollectFarmOption",collectNum),character, Context.onCollectAction, info)
-            if collectNum < 1 then collectOption.notAvailable = true end
+            if collectNum < 1 or info.farmData.farmType == "moss" then collectOption.notAvailable = true end
 
             local cleanOption = subMenu:addOption(getText("IGUI_FishFarmMod_CleanFarmOption"),character, Context.onFarmAction, info, "clean")
             info.bleachDelta = info.singleTile and - 0.05 or  - 0.2

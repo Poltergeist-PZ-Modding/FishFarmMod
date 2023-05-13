@@ -49,7 +49,7 @@ function Action:perform()
 
     local data = self.info.farmData
     local dataObj
-    if data.singleTile then
+    if self.info.singleTile then
         dataObj = self.farm
         if self.option == "clean" then
             self.farm:setOverlaySprite(nil)
