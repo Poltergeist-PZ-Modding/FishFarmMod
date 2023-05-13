@@ -58,6 +58,10 @@ function Action:perform()
     else
         self.character:setHaloNote(getText("IGUI_Moveable_Fail"), 255,255,255,300)
     end
+
+    data.filled = data.filled - caught
+    self.farm:transmitModData()
+
     -- needed to remove from queue / start next.
     ISBaseTimedAction.perform(self)
 end

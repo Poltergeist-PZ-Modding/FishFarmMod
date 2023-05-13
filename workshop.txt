@@ -2,22 +2,24 @@ version=1
 id=2971843681
 title=Fish Farm
 description=[h1]Description[/h1]
-description=This mod adds more designs for painting signs and can be easily expanded to add more options.
-description=Overlaying colors can produce countless combination. It's any world  builder's must have mod!
+description=This mod adds fish farms to the game, allowing players to create and maintain their own aquatic farms. With this mod, players can have different types of farms, collect from them and add to a pot for cooking.
 description=
-description=[h1]Compatibility[/h1]
-description=Tread's Paint Symbols [41.66+]: tested, no issues found.
-description=[hr][/hr]
+description=[list]
+description=[*] Build a farm: This requires to read the magazine (can be disabled), a hammer and building materials. Players can build them on empty water squares near the shore.
+description=[*] Fish Food (compost): You add food to the farms for the farm to produce items, fish eat it (based on the compost speed) and the farm produces fish.
+description=[*] There are 3 different farm types that produce different items. The bait farm to get bait fish, the crab farm to get crabs / lobsters, the shrimp farm that produces shrimps / shells.
+description=[*] New tasty recipes to cook the farm items.
+description=[/list]
+description=
 description=[quote=TeamOrbit]
 description=Commissioned by [b]Kamatasomi[/b][/quote]
 description=
-description=[h1]Hire Team Orbit for Custom Mod Commission[/h1]
+description=[h1]Hire Team Orbit for Custom Mod Commissions[/h1]
 description=[url= https://discord.gg/2skchrKrDv ][img]https://raw.githubusercontent.com/Glytch3r/TeamOrbitAds/main/square_serve.gif[/img][/url][
 description=[url= https://steamcommunity.com/sharedfiles/filedetails/?id=2963097079][img]https://raw.githubusercontent.com/Glytch3r/TeamOrbitAds/main/workshop.png[/img][/url]
 description=[code]
-description=Workshop ID: 2966846210
-description=Mod ID: TOMorePaintSigns
-description=[url=http://theindiestone.com/forums/index.php/topic/2530-mod-permissions/?p=36477]Permissions: please contact us or require this mod if you want to make changes.[/url]
+description=Workshop ID: 2971843681
+description=Mod ID: FishFarmMod
 description=[/code]
 tags=Build 41;Food;Multiplayer
-visibility=unlisted
+visibility=public
