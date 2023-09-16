@@ -1,0 +1,31 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Konijima/project-zomboid-studio/master/pzstudio.schema.json",
+  "title": "Fish Farm",
+  "authors": [
+    "Poltergeist",
+    "Sapph",
+    "glytch3r"
+  ],
+  "workshop": {
+    "id": 2971843681,
+    "visibility": "public",
+    "tags": [
+      "Build 41",
+      "Food",
+      "Multiplayer"
+    ],
+    "excludes": []
+  },
+  "mods": {
+    "FishFarmMod": {
+      "name": "Fish Farm",
+      "description": "This Mod adds buildable fish farms.",
+      "poster": [
+        "poster.png"
+      ],
+      "versionMin": "41.78",
+      "pack": "FishFarmMod",
+      "tiledef": "FishFarmMod 2697"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+[h1]Description[/h1]
+This mod adds fish farms to the game, allowing players to create and maintain their own aquatic farms. With this mod, players can have different types of farms, collect from them and add to a pot for cooking.
+
+[list]
+[*] Build a farm: This requires to read the magazine (can be disabled), a hammer and building materials. Players can build them on empty water squares near the shore.
+[*] Fish Food (compost): You add food to the farms for the farm to produce items, fish eat it (based on the compost speed) and the farm produces fish.
+[*] There are 3 different farm types that produce different items. The bait farm to get bait fish, the crab farm to get crabs / lobsters, the shrimp farm that produces shrimps / shells.
+[*] New tasty recipes to cook the farm items.
+[/list]
+[spoiler] Start farm and collect fish options, both work based on the produced compost from the food items.
+[/spoiler]
+
+[h1]Compatibility[/h1]
+Mods that break the Build Menu might not be compatible. If you use a mod with old Build Menu files, let them know to update to the latest version.
+
+[code][url=https://discord.gg/SReMnbV4V7][img]https://raw.githubusercontent.com/Poltergeistzx/Project-Zomboid/main/images/PZWorkshopBanner.png[/img][/url]
+[url=https://ko-fi.com/P5P6JASON][img]https://raw.githubusercontent.com/Poltergeistzx/Project-Zomboid/main/images/Ko-fi-01.png[/img][/url][/code]
+[quote]|| Created by: Poltergeist || Tiles by: Glytch3r || Models by: Sapph || Commissioned by Kamatasomi ||
+[hr]Workshop ID: 2971843681 || Mod ID: FishFarmMod[/hr]
+[/quote]
