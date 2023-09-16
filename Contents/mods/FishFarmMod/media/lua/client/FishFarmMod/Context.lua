@@ -58,7 +58,7 @@ function Context.OnFillWorldObjectContextMenu(playerNum, context, worldobjects, 
                 invalid = getText("IGUI_FishFarmMod_RequiresHammer")
             end
 
-            if invalid ~= nil then
+            if invalid ~= nil and not ISBuildMenu.cheat then
                 local option = context:addOption(getText("IGUI_FishFarmMod_FishFarm"))
                 option.notAvailable = true
                 option.toolTip = ISWorldObjectContextMenu.addToolTip()
@@ -73,20 +73,19 @@ function Context.OnFillWorldObjectContextMenu(playerNum, context, worldobjects, 
                     toolTip:setName(getText("IGUI_FishFarmMod_FishFarm"))
                     local rgb
                     local netCount = ISBuildMenu.countMaterial(playerNum,"Base.FishingNet")
-                    if netCount < buildReq.FishingNets then
+                    if netCount < buildReq.FishingNets and not ISBuildMenu.cheat then
                         rgb = ISBuildMenu.bhs
                         option.notAvailable = true
                     else
                         rgb = ISBuildMenu.ghs
                     end
                     toolTip.description = getText("IGUI_FishFarmMod_BuildFishDescription")..string.format("%s%s%s %d/%d <LINE> ",toolTip.description,
-                            rgb,getItemNameFromFullType("Base.FishingNet"),netCount, buildReq.FishingNets)
+                            rgb or "",getItemNameFromFullType("Base.FishingNet"),netCount, buildReq.FishingNets)
                     ISBuildMenu.requireHammer(option)
                 end
             end
         end
     else
-        local character = getSpecificPlayer(playerNum)
 
         local info = {}
         info.obj = Context.farmObject

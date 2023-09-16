@@ -1,10 +1,8 @@
 id=FishFarmMod
 name=Fish Farm
-description=This Mod is Commissioned to Team Orbit. You are not allowed to put this on your modpack
+description=This Mod adds buildable fish farms.
 poster=poster.png
-versionMin=41.0
+versionMin=41.78
 tiledef=FishFarmMod 2697
 pack=FishFarmMod
-
-icon=icon.png
-authors=TeamOrbit
+authors=Poltergeistzx,Sapph,glytc3r
