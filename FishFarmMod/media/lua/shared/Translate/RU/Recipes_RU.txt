@@ -1,0 +1,3 @@
+Recipes_RU {
+    Recipe_FishFarmMod_MakeFarmNet = "Сделать ферму",
+}

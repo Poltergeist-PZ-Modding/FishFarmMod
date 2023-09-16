@@ -1,0 +1,3 @@
+Recipes_CN {
+    Recipe_FishFarmMod_MakeFarmNet = "制作农场",
+}

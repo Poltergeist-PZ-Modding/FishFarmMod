@@ -1,0 +1,5 @@
+Sandbox_FR = {
+	Sandbox_OrbitFishingMod = "Module de pêche",
+	Sandbox_OrbitFishingMod_FarmCraftingMagazine = "Ferme : Magazine d'artisanat",
+	Sandbox_OrbitFishingMod_FarmCraftingMagazine_tooltip = "Fabriquer les tuiles nécessite de trouver le magazine. <LINE> Lorsqu'ils sont activés, des magazines apparaîtront et vous devrez avoir lu le magazine pour fabriquer les tuiles.",
+}

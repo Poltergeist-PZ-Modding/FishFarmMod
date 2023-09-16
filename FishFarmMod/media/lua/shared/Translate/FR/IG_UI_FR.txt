@@ -1,0 +1,14 @@
+IGUI_FR = {
+    IGUI_FishFarmMod_FishFarm = "Ferme aquacole",
+    IGUI_FishFarmMod_BuildFishFarm = "Construire une ferme piscicole",
+    IGUI_FishFarmMod_BuildFishFarmSingle = "Construire une petite ferme piscicole",
+    IGUI_FishFarmMod_BuildFishDescription = "Transforme les aliments indésirables et pourris en nourriture pour poissons au fil du temps.",
+    IGUI_FishFarmMod_RequiresHammer = "Vous n'avez pas de marteau.",
+    IGUI_FishFarmMod_RequiresMagazine = "Vous ne savez pas comment construire cela.",
+    IGUI_FishFarmMod_FarmBroken = "La ferme est en panne",
+    IGUI_FishFarmMod_FishFarmOption = "Démarrer une ferme piscicole",
+    IGUI_FishFarmMod_CrabFarmOption = "Démarrer une ferme de crabes",
+    IGUI_FishFarmMod_ShrimpFarmOption = "Démarrer une ferme de crevettes",
+    IGUI_FishFarmMod_CleanFarmOption = "Nettoyer la ferme (réinitialisation)",
+    IGUI_FishFarmMod_CollectFarmOption = "Collecte à la ferme, disponible :%1",
+}

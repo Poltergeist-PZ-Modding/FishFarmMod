@@ -1,0 +1,5 @@
+Sandbox_RU = {
+	Sandbox_OrbitFishingMod = "Рыболовный мод",
+	Sandbox_OrbitFishingMod_FarmCraftingMagazine = "Ферма: журнал о крафте",
+	Sandbox_OrbitFishingMod_FarmCraftingMagazine_tooltip = "Для изготовления плиток необходимо найти журнал. <LINE> При включении будут появляться журналы, и вам нужно будет прочитать журнал, чтобы создать плитки.",
+}

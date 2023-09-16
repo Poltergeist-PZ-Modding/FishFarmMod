@@ -1,0 +1,5 @@
+Sandbox_PT = {
+	Sandbox_OrbitFishingMod = "Mod de pesca",
+	Sandbox_OrbitFishingMod_FarmCraftingMagazine = "Fazenda: Revista Crafting",
+	Sandbox_OrbitFishingMod_FarmCraftingMagazine_tooltip = "Criar as peças requer encontrar a revista. <LINE> Quando ativado, revistas aparecerão e você precisará ter lido a revista para criar as peças.",
+}

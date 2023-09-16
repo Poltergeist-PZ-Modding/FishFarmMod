@@ -1,0 +1,14 @@
+IGUI_CN = {
+    IGUI_FishFarmMod_FishFarm = "养鱼场",
+    IGUI_FishFarmMod_BuildFishFarm = "建造养鱼场",
+    IGUI_FishFarmMod_BuildFishFarmSingle = "建造小型养鱼场",
+    IGUI_FishFarmMod_BuildFishDescription = "随着时间的推移，将不需要的和腐烂的食物变成鱼食。",
+    IGUI_FishFarmMod_RequiresHammer = "你没有锤子。",
+    IGUI_FishFarmMod_RequiresMagazine = "你不知道如何构建这个。",
+    IGUI_FishFarmMod_FarmBroken = "农场坏了",
+    IGUI_FishFarmMod_FishFarmOption = "开始养鱼场",
+    IGUI_FishFarmMod_CrabFarmOption = "开始螃蟹养殖场",
+    IGUI_FishFarmMod_ShrimpFarmOption = "开始养虾场",
+    IGUI_FishFarmMod_CleanFarmOption = "清洁农场（重置）",
+    IGUI_FishFarmMod_CollectFarmOption = "从农场收集，可用：%1",
+}

@@ -1,0 +1,14 @@
+IGUI_ES = {
+    IGUI_FishFarmMod_FishFarm = "Granja de peces",
+    IGUI_FishFarmMod_BuildFishFarm = "construir piscifactoría",
+    IGUI_FishFarmMod_BuildFishFarmSingle = "construir una pequeña piscifactoría",
+    IGUI_FishFarmMod_BuildFishDescription = "Con el tiempo, convierte los alimentos no deseados y podridos en alimento para peces.",
+    IGUI_FishFarmMod_RequiresHammer = "No tienes martillo.",
+    IGUI_FishFarmMod_RequiresMagazine = "No sabes cómo construir esto.",
+    IGUI_FishFarmMod_FarmBroken = "La granja está rota",
+    IGUI_FishFarmMod_FishFarmOption = "Iniciar piscifactoría",
+    IGUI_FishFarmMod_CrabFarmOption = "Iniciar granja de cangrejos",
+    IGUI_FishFarmMod_ShrimpFarmOption = "Iniciar granja camaronera",
+    IGUI_FishFarmMod_CleanFarmOption = "Limpiar granja (restablecer)",
+    IGUI_FishFarmMod_CollectFarmOption = "Recoger en la granja, disponible:%1",
+}

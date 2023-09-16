@@ -1,0 +1,3 @@
+Recipes_ES {
+    Recipe_FishFarmMod_MakeFarmNet = "hacer granja",
+}

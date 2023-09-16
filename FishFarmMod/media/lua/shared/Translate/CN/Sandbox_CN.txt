@@ -1,0 +1,5 @@
+Sandbox_CN = {
+	Sandbox_OrbitFishingMod = "钓鱼模组",
+	Sandbox_OrbitFishingMod_FarmCraftingMagazine = "农场：手工杂志",
+	Sandbox_OrbitFishingMod_FarmCraftingMagazine_tooltip = "制作瓷砖需要找到杂志。 <LINE> 启用后，杂志将会生成，您需要阅读杂志才能制作图块。",
+}

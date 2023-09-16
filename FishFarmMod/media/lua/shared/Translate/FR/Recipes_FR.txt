@@ -1,0 +1,3 @@
+Recipes_FR {
+    Recipe_FishFarmMod_MakeFarmNet = "Faire une ferme",
+}

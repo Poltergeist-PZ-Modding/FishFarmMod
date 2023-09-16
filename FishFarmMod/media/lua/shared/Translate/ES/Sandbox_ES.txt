@@ -1,0 +1,5 @@
+Sandbox_ES = {
+	Sandbox_OrbitFishingMod = "Modo de pesca",
+	Sandbox_OrbitFishingMod_FarmCraftingMagazine = "Granja: Revista de artesanía",
+	Sandbox_OrbitFishingMod_FarmCraftingMagazine_tooltip = "Para elaborar los mosaicos es necesario encontrar la revista. <LINE> Cuando esté habilitado, se generarán revistas y deberás haber leído la revista para crear los mosaicos.",
+}
