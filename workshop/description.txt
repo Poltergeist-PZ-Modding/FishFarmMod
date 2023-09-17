@@ -15,6 +15,12 @@ Mods that break the Build Menu might not be compatible. If you use a mod with ol
 
 [code][url=https://discord.gg/SReMnbV4V7][img]https://raw.githubusercontent.com/Poltergeistzx/Project-Zomboid/main/images/PZWorkshopBanner.png[/img][/url]
 [url=https://ko-fi.com/P5P6JASON][img]https://raw.githubusercontent.com/Poltergeistzx/Project-Zomboid/main/images/Ko-fi-01.png[/img][/url][/code]
-[quote]|| Created by: Poltergeist || Tiles by: Glytch3r || Models by: Sapph || Commissioned by Kamatasomi ||
-[hr]Workshop ID: 2971843681 || Mod ID: FishFarmMod[/hr]
-[/quote]
+[code]
+[h3]Contributors[/h3]
+Created by: Poltergeist, Commissioned by Kamatasomi, Tiles by: Glytch3r, Models by: Sapph.
+[table]
+[h3]Mod info[/h3]
+[tr][td]	Permissions:	[/td][td]	[url=http://theindiestone.com/forums/index.php/topic/2530-mod-permissions/?p=36478]Ask for Permission[/url]	[/td][/tr]
+[tr][td]	Workshop ID:	[/td][td]	2971843681	[/td][/tr]
+[tr][td]	Mod ID:	[/td][td]	FishFarmMod	[/td][/tr]
+[/table][/code]
