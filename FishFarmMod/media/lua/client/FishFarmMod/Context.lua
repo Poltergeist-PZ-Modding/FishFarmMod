@@ -62,7 +62,7 @@ function Context.OnFillWorldObjectContextMenu(playerNum, context, worldobjects, 
                 local option = context:addOption(getText("IGUI_FishFarmMod_FishFarm"))
                 option.notAvailable = true
                 option.toolTip = ISWorldObjectContextMenu.addToolTip()
-                option.toolTip.description = ISBuildMenu.bhs .. invalid
+                option.toolTip.description = (ISBuildMenu.bhs or "") .. invalid
             else
                 local subMenu = context:getNew(context)
                 context:addSubMenu(context:addOption(getText("IGUI_FishFarmMod_FishFarm")), subMenu)
@@ -133,7 +133,7 @@ function Context.OnFillWorldObjectContextMenu(playerNum, context, worldobjects, 
             local option = context:addOption(getText("IGUI_FishFarmMod_FishFarm"))
             option.notAvailable = true
             option.toolTip = ISWorldObjectContextMenu.addToolTip()
-            option.toolTip.description = ISBuildMenu.bhs .. getText("IGUI_FishFarmMod_FarmBroken")
+            option.toolTip.description = (ISBuildMenu.bhs or "") .. getText("IGUI_FishFarmMod_FarmBroken")
         elseif not info.farmData.farmType then
             local subMenu = context:getNew(context)
             local subMenuOption = context:addOption(getText("IGUI_FishFarmMod_FishFarm"))
