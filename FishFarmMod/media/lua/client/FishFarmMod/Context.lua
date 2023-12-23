@@ -86,7 +86,7 @@ function Context.OnFillWorldObjectContextMenu(playerNum, context, worldobjects, 
             end
         end
     else
-
+        local character = getSpecificPlayer(playerNum)
         local info = {}
         info.obj = Context.farmObject
 
@@ -135,25 +135,34 @@ function Context.OnFillWorldObjectContextMenu(playerNum, context, worldobjects, 
             option.toolTip = ISWorldObjectContextMenu.addToolTip()
             option.toolTip.description = (ISBuildMenu.bhs or "") .. getText("IGUI_FishFarmMod_FarmBroken")
         elseif not info.farmData.farmType then
+            info.farmData.compost = info.farmData.compost or 0
             local subMenu = context:getNew(context)
             local subMenuOption = context:addOption(getText("IGUI_FishFarmMod_FishFarm"))
             context:addSubMenu(subMenuOption, subMenu)
 
-            local baitOption = subMenu:addOption(getText("IGUI_FishFarmMod_FishFarmOption"),character, Context.onFarmAction, info, "bait")
+            local option = subMenu:addOption(getText("IGUI_FishFarmMod_FishFarmOption"),character, Context.onFarmAction, info, "bait")
             if info.singleTile then
-                baitOption.notAvailable = true
-            elseif not info.farmData.compost or info.farmData.compost < 30 then
-                baitOption.notAvailable = true
+                option.notAvailable = true
+                option.toolTip = ISWorldObjectContextMenu.addToolTip()
+                option.toolTip.description = (ISBuildMenu.bhs or "") .. getText("IGUI_FishFarmMod_SmallFarm")
+            elseif info.farmData.compost < 30 then
+                option.notAvailable = true
+                option.toolTip = ISWorldObjectContextMenu.addToolTip()
+                option.toolTip.description = (ISBuildMenu.bhs or "") .. getText("IGUI_FishFarmMod_LowCompost",info.farmData.compost,30)
             end
 
-            local crabOption = subMenu:addOption(getText("IGUI_FishFarmMod_CrabFarmOption"),character, Context.onFarmAction, info, "crab")
-            if not info.farmData.compost  or info.farmData.compost < 20 then
-                crabOption.notAvailable = true
+            option = subMenu:addOption(getText("IGUI_FishFarmMod_CrabFarmOption"),character, Context.onFarmAction, info, "crab")
+            if info.farmData.compost < 20 then
+                option.notAvailable = true
+                option.toolTip = ISWorldObjectContextMenu.addToolTip()
+                option.toolTip.description = (ISBuildMenu.bhs or "") .. getText("IGUI_FishFarmMod_LowCompost",info.farmData.compost,20)
             end
 
-            local shrimpOption = subMenu:addOption(getText("IGUI_FishFarmMod_ShrimpFarmOption"),character, Context.onFarmAction, info, "shrimp")
-            if not info.farmData.compost  or info.farmData.compost < 10 then
-                shrimpOption.notAvailable = true
+            option = subMenu:addOption(getText("IGUI_FishFarmMod_ShrimpFarmOption"),character, Context.onFarmAction, info, "shrimp")
+            if info.farmData.compost < 10 then
+                option.notAvailable = true
+                option.toolTip = ISWorldObjectContextMenu.addToolTip()
+                option.toolTip.description = (ISBuildMenu.bhs or "") .. getText("IGUI_FishFarmMod_LowCompost",info.farmData.compost,10)
             end
         else
             local subMenu = context:getNew(context)
