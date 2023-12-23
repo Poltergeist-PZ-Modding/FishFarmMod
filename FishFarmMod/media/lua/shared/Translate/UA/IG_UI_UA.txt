@@ -1,0 +1,16 @@
+IGUI_UA = {
+    IGUI_FishFarmMod_FishFarm = "Рибне господарство",
+    IGUI_FishFarmMod_BuildFishFarm = "Побудуйте рибну ферму",
+    IGUI_FishFarmMod_BuildFishFarmSingle = "Побудуйте малу рибну ферму",
+    IGUI_FishFarmMod_BuildFishDescription = "З часом перетворює непотрібну та зіпсовану їжу на корм для риб.",
+    IGUI_FishFarmMod_RequiresHammer = "У вас немає молотка.",
+    IGUI_FishFarmMod_RequiresMagazine = "Ви не знаєте, як це побудувати.",
+    IGUI_FishFarmMod_FarmBroken = "Ферма розбита",
+    IGUI_FishFarmMod_SmallFarm = "Ферма невелика",
+    IGUI_FishFarmMod_LowCompost = "Рівень компосту низький (%1/%2)",
+    IGUI_FishFarmMod_FishFarmOption = "Запустіть рибну ферму",
+    IGUI_FishFarmMod_CrabFarmOption = "Запустіть крабову ферму",
+    IGUI_FishFarmMod_ShrimpFarmOption = "Запустіть креветкову ферму",
+    IGUI_FishFarmMod_CleanFarmOption = "Чиста ферма (скидання)",
+    IGUI_FishFarmMod_CollectFarmOption = "Зібрати з ферми, доступно:%1",
+}
