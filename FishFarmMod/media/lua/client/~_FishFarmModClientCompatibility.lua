@@ -1,4 +1,7 @@
 require "FishFarmMod/ClientPatches"
+local Mod = require "FishFarmMod"
 
-require "Moveables/ISMoveableSpriteProps"
-ISMoveableSpriteProps.scrapObject = FishFarmMod.ClientPatch["ISMoveableSpriteProps.scrapObject"](ISMoveableSpriteProps.scrapObject)
+for k,v in pairs(Mod.ClientPatch) do
+    v()
+end
+Mod.ClientPatch = nil

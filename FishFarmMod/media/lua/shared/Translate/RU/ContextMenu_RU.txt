@@ -1,0 +1,3 @@
+ContextMenu_RU = {
+    ContextMenu_FishFarmMod_NoAccessNW = "Невозможно получить доступ к северо-западному месту сбора.",
+}

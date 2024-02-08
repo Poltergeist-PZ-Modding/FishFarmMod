@@ -1,0 +1,3 @@
+ContextMenu_PT = {
+    ContextMenu_FishFarmMod_NoAccessNW = "Não é possível acessar o ponto de encontro Noroeste",
+}

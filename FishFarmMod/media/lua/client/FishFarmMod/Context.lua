@@ -1,23 +1,30 @@
-local mod = FishFarmMod
+local Mod = require "FishFarmMod"
+
 local Context = {
     farmObjects = ArrayList.new(),
 }
 
 function Context.onFarmAction(character, info, action)
     if luautils.walkAdj(character,info.obj:getSquare(), false) then
-        ISTimedActionQueue.add(mod.FishFarmAction:new(character,info,action))
+        ISTimedActionQueue.add(Mod.FishFarmAction:new(character,info,action))
     end
 end
 
+---@param character IsoGameCharacter
+---@param info table
 function Context.onCollectAction(character, info)
-    local ft = info.obj:getModData().farmType
-    if luautils.walkAdj(character, info.obj:getSquare(), false) and ft ~= nil and ft ~= "moss" then
-        ISTimedActionQueue.add(mod.CollectAction:new(character, info.obj))
+    if luautils.walkAdj(character, info.obj:getSquare(), false) then
+        local ft = info.obj:getModData().farmType
+        if ft ~= nil and ft ~= "moss" then
+            ISTimedActionQueue.add(Mod.CollectAction:new(character, info.obj))
+        end
+    else
+        character:setHaloNote(getText("ContextMenu_FishFarmMod_NoAccessNW"),255,255,255,150)
     end
 end
 
 function Context.onBuildFarm(playerNum,info)
-    getCell():setDrag(mod.Build:new(playerNum,info), playerNum)
+    getCell():setDrag(Mod.Build:new(playerNum,info), playerNum)
 end
 
 function Context.addBuildContextOptions(playerNum,context)
@@ -40,7 +47,7 @@ function Context.addBuildContextOptions(playerNum,context)
         local subMenu = context:getNew(context)
         context:addSubMenu(context:addOption(getText("IGUI_FishFarmMod_FishFarm")), subMenu)
         for _,option in ipairs({"FishFarm","FishFarmSingle"}) do
-            local buildReq = mod.BuildInfo[option]
+            local buildReq = Mod.BuildInfo[option]
             local option = subMenu:addOption(getText("IGUI_FishFarmMod_Build"..option), playerNum, Context.onBuildFarm, buildReq)
             local toolTip = ISBuildMenu.canBuild(buildReq.Planks,buildReq.Nails,0,0,0,buildReq.Carpentry,option,playerNum)
             toolTip:setName(getText("IGUI_FishFarmMod_FishFarm"))
@@ -62,12 +69,12 @@ end
 function Context.addFarmContextOptions(playerNum,context)
     local character = getSpecificPlayer(playerNum)
     local info = {}
-    info.obj = Context.farmObject
 
     local spriteGrid = Context.farmObject:getSprite():getSpriteGrid()
     local dc = 0
     if not spriteGrid then
         info.singleTile = true
+        info.obj = Context.farmObject
         info.farmData = Context.farmObject:getModData()
         dc = Context.farmObject:getCompost()
         if dc > 0 then
@@ -77,8 +84,9 @@ function Context.addFarmContextOptions(playerNum,context)
         Context.farmObject:getSpriteGridObjects(Context.farmObjects)
         local objSize = Context.farmObjects:size()
         if spriteGrid:getSpriteCount() == objSize then
-            info.farmData = Context.farmObjects:get(0):getModData()
-            for i=0, objSize-1 do
+            info.obj = Context.farmObjects:get(0)
+            info.farmData = info.obj:getModData()
+            for i = 0, objSize - 1 do
                 local object = Context.farmObjects:get(i)
                 local objectCompost = object ~= nil and object:getCompost() or 0
                 if objectCompost > 0 then
@@ -193,4 +201,4 @@ end
 Events.OnPreFillWorldObjectContextMenu.Add(Context.OnPreFillWorldObjectContextMenu)
 Events.OnFillWorldObjectContextMenu.Add(Context.OnFillWorldObjectContextMenu)
 
-mod.UI = Context
+Mod.UI = Context

@@ -1,0 +1,3 @@
+ContextMenu_CN = {
+    ContextMenu_FishFarmMod_NoAccessNW = "无法进入西北聚集点",
+}

@@ -1,8 +1,11 @@
 local Patch = {}
 
-Patch["ISMoveableSpriteProps.scrapObject"] = function(scrapObject)
-    return function(self,_character)
-        if self.sprite:getSpriteGrid() ~= nil and self.spriteName ~= nil and self.spriteName:find("^FishFarmMod_") then
+
+Patch["ISMoveableSpriteProps.scrapObject"] = function()
+    require "Moveables/ISMoveableSpriteProps"
+    local original = ISMoveableSpriteProps.scrapObject
+    function ISMoveableSpriteProps.scrapObject(self,_character)
+        if self.sprite:getSpriteGrid() ~= nil and self.spriteName ~= nil and self.spriteName:find("^FishFarmMod_") ~= nil then
             local added = 0
             local scrapResult, chance, perkName = self:canScrapObject(_character)
 
@@ -22,9 +25,9 @@ Patch["ISMoveableSpriteProps.scrapObject"] = function(scrapObject)
             end
             self:scrapHaloNoteCheck(_character, added)
         else
-            return scrapObject(self,_character)
+            return original(self,_character)
         end
     end
 end
 
-FishFarmMod.ClientPatch = Patch
+require("FishFarmMod").ClientPatch = Patch

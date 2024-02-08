@@ -1,0 +1,3 @@
+ContextMenu_EN = {
+    ContextMenu_FishFarmMod_NoAccessNW = "Can not access North-West gathering spot",
+}

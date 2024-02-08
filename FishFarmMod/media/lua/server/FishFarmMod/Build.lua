@@ -1,4 +1,4 @@
-local mod = FishFarmMod
+local Mod = require "FishFarmMod"
 
 require "BuildingObjects/ISBuildingObject"
 local Build = ISBuildingObject:derive("FishFarmModBuild")
@@ -158,4 +158,4 @@ function Build:updateGridDir(square)
     end
 end
 
-mod.Build = Build
+Mod.Build = Build

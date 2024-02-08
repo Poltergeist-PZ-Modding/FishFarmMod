@@ -1,3 +1,5 @@
+local Mod = require("FishFarmMod")
+
 require "TimedActions/ISBaseTimedAction"
 local Action = ISBaseTimedAction:derive("FFMCollectFishAction")
 
@@ -49,23 +51,27 @@ function Action:perform()
 
     local data = self.info.farmData
     local dataObj
+    local offset
     if self.info.singleTile then
         dataObj = self.farm
-        if self.option == "clean" then
-            self.farm:setOverlaySprite(nil)
+        offset = Mod.Types[self.option].attachedOffset1
+        if offset ~= nil then
+            Mod.Util.changeAttachedSprite(self.farm, string.format("FishFarmMod_%d", 16 + offset))
         else
-            self.farm:setOverlaySprite("FishFarmMod_" .. (16 + (self.option == "bait" and 1 or self.option == "crab" and 2 or 3)))
+            Mod.Util.changeAttachedSprite(self.farm, nil)
         end
     else
         local gridObjects = ArrayList.new()
         self.farm:getSpriteGridObjects(gridObjects)
         dataObj = gridObjects:get(0)
-        for i=0,gridObjects:size()-1 do
+        offset = Mod.Types[self.option].attachedOffset2
+        local fn = function(s) return s + offset end
+        for i = 0, gridObjects:size() - 1 do
             local object = gridObjects:get(i)
-            if self.option == "clean" then
-                object:setOverlaySprite(nil)
+            if offset ~= nil then
+                Mod.Util.changeAttachedSprite(object, object:getTextureName():gsub("%d+$",fn))
             else
-                object:setOverlaySprite("FishFarmMod_" .. (object:getTextureName():gsub("FishFarmMod_","") + (self.option == "bait" and "8" or self.option == "crab" and "4" or "12")))
+                Mod.Util.changeAttachedSprite(object, nil)
             end
         end
     end
@@ -89,4 +95,4 @@ function Action:perform()
     ISBaseTimedAction.perform(self)
 end
 
-FishFarmMod.FishFarmAction = Action
+Mod.FishFarmAction = Action

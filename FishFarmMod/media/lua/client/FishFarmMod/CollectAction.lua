@@ -1,3 +1,5 @@
+local Mod = require "FishFarmMod"
+
 require "TimedActions/ISBaseTimedAction"
 local Action = ISBaseTimedAction:derive("FFMCollectFishAction")
 
@@ -10,6 +12,7 @@ function Action:new(character, farm)
     o.stopOnRun = true
     o.farm = farm
     o.farmType = farm:getModData().farmType
+    o.items = Mod.Types[o.farmType].items
 
     if character:isTimedActionInstant() then
         o.maxTime = 1
@@ -45,13 +48,12 @@ function Action:perform()
     local skill = self.character:getPerkLevel(Perks.Fishing)
     local inventory = self.character:getInventory()
     local fishAvailable = data.filled
-    local collectType = self.collectTypes[data.farmType]
-    local ctLen = #collectType
+    local ctLen = #self.items
     local caught = 0
-    for i=1,fishAvailable do
+    for i = 1, fishAvailable do
         if ZombRand(10) < skill then
             caught = caught + 1
-            inventory:AddItem(collectType[ZombRand(ctLen) + 1])
+            inventory:AddItem(self.items[ZombRand(ctLen) + 1])
         end
     end
     if caught > 0 then
@@ -67,17 +69,4 @@ function Action:perform()
     ISBaseTimedAction.perform(self)
 end
 
-Action.collectTypes = {
-    bait = {"Base.BaitFish"},
-    crab = {
-        "FFM.Lobster",
-        "FFM.BlueCrab",
-        "FFM.PortunusCrab",
-    },
-    shrimp = {
-        "FFM.Shrimp",
-        "FFM.Shell",
-    },
-}
-
-FishFarmMod.CollectAction = Action
+Mod.CollectAction = Action
