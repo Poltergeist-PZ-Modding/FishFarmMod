@@ -1,7 +1,0 @@
--- 23 Dec
-added more tooltips
-fixed bug from last version
-
---17 Sep 2023
-Minor compatibility fix
-Translations

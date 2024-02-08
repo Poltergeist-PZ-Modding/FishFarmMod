@@ -13,14 +13,13 @@ This mod adds fish farms to the game, allowing players to create and maintain th
 [h1]Compatibility[/h1]
 Mods that break the Build Menu might not be compatible. If you use a mod with old Build Menu files, let them know to update to the latest version.
 
-[code][url=https://discord.gg/SReMnbV4V7][img]https://raw.githubusercontent.com/Poltergeistzx/Project-Zomboid/main/images/PZWorkshopBanner.png[/img][/url]
-[url=https://ko-fi.com/P5P6JASON][img]https://raw.githubusercontent.com/Poltergeistzx/Project-Zomboid/main/images/Ko-fi-01.png[/img][/url][/code]
+[code][url=https://steamcommunity.com:/linkfilter/?u=github.com/Poltergeist-PZ-Modding][img]https://raw.githubusercontent.com/Poltergeist-ix/.images/main/polt-mod-icon-1.png[/img][/url][url=https://steamcommunity.com:/linkfilter/?u=ko-fi.com/poltergeist89261][img]https://raw.githubusercontent.com/Poltergeist-ix/.images/main/ko-fi-fire-2-100.gif[/img][/url][url=https://steamcommunity.com:/linkfilter/?u=theindiestone.com/forums/index.php/topic/2530-mod-permissions/?p=36479][img]https://raw.githubusercontent.com/Poltergeist-ix/.images/main/tis-mod-permissions-4-on-lockdown-100.png[/img][/url][url=https://steamcommunity.com:/linkfilter/?u=discord.gg/SReMnbV4V7][img]https://raw.githubusercontent.com/Poltergeist-ix/.images/main/PZWorkshopCommBanner-1.png[/img][/url]
+Feel free to report any issues or provide feedback on [url=https://github.com/Poltergeist-PZ-Modding/FishFarmMod/issues/]GitHub[/url]. Alternatively, you can contact me on discord as poltergeist_ix. Please note that I may not respond to messages immediately.[/code]
 [code]
 [h3]Contributors[/h3]
-Created by: Poltergeist, Commissioned by Kamatasomi, Tiles by: Glytch3r, Models by: Sapph.
+Created by: Poltergeist, commissioned by Kamatasomi, original tile images by Glytch3r, models and food scripts by Sapph.
 [table]
 [h3]Mod info[/h3]
-[tr][td]	Permissions:	[/td][td]	[url=http://theindiestone.com/forums/index.php/topic/2530-mod-permissions/?p=36478]Ask for Permission[/url]	[/td][/tr]
 [tr][td]	Workshop ID:	[/td][td]	2971843681	[/td][/tr]
 [tr][td]	Mod ID:	[/td][td]	FishFarmMod	[/td][/tr]
 [/table][/code]

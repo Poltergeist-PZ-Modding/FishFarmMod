@@ -10,7 +10,8 @@ function Context.onFarmAction(character, info, action)
 end
 
 function Context.onCollectAction(character, info)
-    if luautils.walkAdj(character, info.obj:getSquare(), false) then
+    local ft = info.obj:getModData().farmType
+    if luautils.walkAdj(character, info.obj:getSquare(), false) and ft ~= nil and ft ~= "moss" then
         ISTimedActionQueue.add(mod.CollectAction:new(character, info.obj))
     end
 end

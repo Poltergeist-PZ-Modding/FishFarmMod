@@ -9,6 +9,7 @@ function Action:new(character, farm)
     o.stopOnWalk = true
     o.stopOnRun = true
     o.farm = farm
+    o.farmType = farm:getModData().farmType
 
     if character:isTimedActionInstant() then
         o.maxTime = 1
@@ -19,7 +20,7 @@ function Action:new(character, farm)
 end
 
 function Action:isValid()
-    return self.farm:getObjectIndex() ~= -1
+    return self.farm:getObjectIndex() ~= -1 and self.farmType == self.farm:getModData().farmType
 end
 
 function Action:update()
@@ -70,7 +71,6 @@ Action.collectTypes = {
     bait = {"Base.BaitFish"},
     crab = {
         "FFM.Lobster",
-        "FFM.RoastedLobster",
         "FFM.BlueCrab",
         "FFM.PortunusCrab",
     },
