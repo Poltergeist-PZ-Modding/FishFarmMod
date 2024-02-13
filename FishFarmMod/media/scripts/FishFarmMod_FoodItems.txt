@@ -185,7 +185,7 @@ module FFM
         DaysTotallyRotten = 6,
         WorldStaticModel = S_PotLobster_Ground,
         CookingSound = BoilingFood,
-        ReplaceOnCooked = DFM.Pot_LobsterBisque,
+        ReplaceOnCooked = FFM.Pot_LobsterBisque,
 	}
 	item RoastingPan_Lobster
 	{
@@ -208,7 +208,7 @@ module FFM
         DaysTotallyRotten = 6,
         WorldStaticModel =  S_RoastPanLobster_Ground,
         CookingSound = BoilingFood,
-        ReplaceOnCooked = DFM.RoastedLobster;Base.BakingPan,
+        ReplaceOnCooked = FFM.RoastedLobster;Base.BakingPan,
 	}
 	item Pot_LobsterBisque
 	{
