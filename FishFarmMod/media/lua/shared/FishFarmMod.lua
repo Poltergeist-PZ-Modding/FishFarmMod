@@ -67,7 +67,7 @@ function Mod.Util.changeAttachedSprite(object,name)
         attached:add(getSprite(name):newInstance())
     end
 
-    object:transmitUpdatedSpriteToServer()
+    object:transmitUpdatedSprite()
 end
 
 function Mod.Util.OnLoadedTileDefinitions(manager)
